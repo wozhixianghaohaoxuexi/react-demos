@@ -1,0 +1,22 @@
+.Home {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+
+  &-sider {
+    width: 200px;
+    background-color: skyblue;
+
+    &-item {
+      width: 100%;
+      padding: 16px;
+      cursor: pointer;
+    }
+  }
+
+  &-content {
+    flex: 1;
+    border: 16px solid #edf2fa;
+  }
+}

@@ -1,6 +1,6 @@
-import { useRoutes } from "react-router-dom";
-import Home from "./pages/Home";
-import SwiperPage from "./pages/SwiperPage";
+import { useRoutes } from 'react-router-dom';
+import Home from './pages/Home';
+import SwiperPage from './pages/SwiperPage';
 
 const routes = [
   {
@@ -9,23 +9,14 @@ const routes = [
     children: [
       {
         path: '/swiper',
-        element: <SwiperPage />,
+        element: <SwiperPage />
       }
     ]
   }
-]
+];
 
 function App() {
-  // return <BrowserRouter>
-  //   <Routes>
-  //     {routes.map((route, index) => (
-  //       <Route key={index} path={route.path} element={route.element} />
-  //     ))}
-  //   </Routes>
-  // </BrowserRouter>
-  return <div>
-    {useRoutes(routes)}
-  </div>
+  return useRoutes(routes);
 }
 
 export default App;
