@@ -1,6 +1,8 @@
 import { useRoutes } from 'react-router-dom';
 import Home from './pages/Home';
-import SwiperPage from './pages/SwiperPage';
+import { lazy } from 'react';
+
+const SwiperPage = lazy(() => import('./pages/SwiperPage'));
 
 const routes = [
   {
